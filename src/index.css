@@ -76,3 +76,33 @@ textarea {
   margin: 24px 18px 0 18px;
   color:red;
 }
+
+@media only screen and (max-width: 1024px) {
+  .feedback-form {
+    width: 90%;
+  }
+  .form__input {
+    font-family: “Open Sans”, sans-serif;
+    font-size: 24px;
+    width: 83%;
+    /* padding: 8px 13px; */
+    display: block;
+    /* margin: 15px; */
+  }
+  .form__contents {
+    padding: 25px 0;
+  }
+  textarea {
+    width: 85%
+  }
+  .textarea__input {
+    margin: 0 15px;
+    padding: 11px;
+  }
+  .btn__submit{
+    margin: 15px;
+    width: 92%;
+    padding: 14px 13px;
+  }
+  
+}
