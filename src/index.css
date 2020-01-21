@@ -106,3 +106,9 @@ textarea {
   }
   
 }
+
+@media only screen and (max-width: 1879px) {
+  textarea {
+    width: 85%
+  }
+}
