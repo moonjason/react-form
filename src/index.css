@@ -5,6 +5,7 @@
 
 html {
   background-image: linear-gradient(to right, #2a2a2a, #191919);
+  font-family: “Open Sans”, sans-serif;
 }
 
 
@@ -17,17 +18,58 @@ html {
 .feedback-form {
   display: flex;
   flex-direction: column;
-  background-color:pink;
+  background-color: #e7e7e7;
   border: 1px solid black;
-  border-radius: 2px;
-  width: 45%;
+  border-radius: 5px;
+  width: 38.5%;
   height: 60%;
 }
 
 .title {
   text-align: center;
+  color: #bb8ce5;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.form__input {
+  font-family: “Open Sans”, sans-serif;
+  font-size: 24px;
+  width: 91.4%;
+  padding: 8px 13px;
+  display: block;
+  margin: 15px;
+}
+
+.textarea__input {
+  font-family: “Open Sans”, sans-serif;
+  font-size: 24px;
+  margin: 0 15px;
+  padding: 11px;
 }
 
 .form__contents {
-  padding: 15px 30px;
+  padding: 25px 35px;
+}
+
+.btn__submit{
+  background-color: #d3a1ff;
+  color: white;
+  font-family: “Open Sans”, sans-serif;
+  font-size: 24px;
+  margin: 15px;
+  width: 95.8%;
+  padding: 14px 13px;
+  border: none;
+  border-radius: 5px;
+}
+
+.characters {
+  margin: 10px 18px;
+  color: gray;
+}
+
+.error {
+  margin: 24px 18px 0 18px;
+  color:red;
 }
