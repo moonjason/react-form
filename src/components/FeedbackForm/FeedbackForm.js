@@ -31,12 +31,20 @@ const FeedbackForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (!validateEmail(form.email)) {
-            setErrorMsg("Please enter a valid e-mail");
+            return setErrorMsg("Please enter a valid e-mail");
         } else if (form.first.length < 1 || form.last.length < 1 || form.message.length < 1){
-            setErrorMsg("Please fill in missing fields");
+            return setErrorMsg("Please fill in missing fields");
         } else {
-            setErrorMsg("Success, check console")
+            setErrorMsg("Success - check console")
         }
+        console.log(form)
+        fetch(`http://52.15.184.142:80/feedback`, {
+            method: "POST",
+            body: JSON.stringify(form),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
     }
 
     return (

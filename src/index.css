@@ -8,6 +8,9 @@ html {
   font-family: “Open Sans”, sans-serif;
 }
 
+textarea { 
+  resize: vertical; 
+}
 
 .form-container {
   margin-top: 65px;
